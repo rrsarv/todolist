@@ -1,0 +1,214 @@
+body{
+    background-color:rgb(222, 227, 242);
+}
+
+.header{
+    background-color: rgb(61, 110, 234);
+    display: block;
+    height: 50px;
+ text-align:left;
+ color: rgb(245, 245, 245);
+ font-size: 24px;
+ font-weight: bold;
+ font-family: montserrat;
+padding-top: 20px;
+padding-left: 60px;
+}
+
+
+
+
+
+
+.row {
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    margin: 0 20px 0 0;
+}
+
+.backlog label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#626262ad;
+    width: 150px; 
+}
+
+
+
+.in_progress label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#7ab0ebad;
+    width: 150px;
+}
+
+.done label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#67d8a1ad;
+    width: 150px;
+}
+
+
+.garbage label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#d98080ad;
+    width: 150px;
+}
+
+
+
+.task { 
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 13px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: aliceblue;
+    list-style-type: none;
+    text-align: left;
+    font-family: montserrat;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    width: 238px;
+}
+
+
+
+.new_task{
+ border: 1px solid #ccc; /* Добавляет границу для наглядности */
+ border-radius: 15px;
+ padding: 20px;
+ margin: 30px 0;
+ margin-left: 40px;
+ width: 530px;
+ box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+ background-color: aliceblue;
+  
+ font-family: montserrat;
+}
+
+
+.new_task button{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-left: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: rgb(61, 110, 234);
+    text-align: center;
+    width: 220px;
+    font-family: montserrat;
+    font-weight: 800;
+    color: aliceblue;
+}
+
+.new_task input{
+    width: 250px;
+    height: 33px;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding-left: 15px;
+    font-family: montserrat;
+    color: rgb(244, 244, 244);
+}
+
+.new_task label{
+font-weight: 800;
+font-size: 20px;
+}
+
+.garbage button{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: #d98080ad;
+    text-align: center;
+    font-family: montserrat;
+    color: #871212ad;
+    font-weight: bold;
+    width: 271px;
+}
+
+
+
+
+
+
+
+.backlog{
+    font-family: montserrat;
+    color: #202020ad;
+    font-weight: bold;
+    width: 22%;
+    
+}
+
+.in_progress{
+    font-family: montserrat;
+    color: #145dabad;
+    font-weight: bold;
+    width: 22%;
+}
+
+.done{
+    font-family: montserrat;
+color:#1b754aad ;
+font-weight: bold;
+width: 22%;
+}
+
+.garbage{
+    font-family: montserrat;
+    color: #871212ad;
+    font-weight: bold;
+    width: 22%;
+}
+
+
+
+
+
+
+.done li{
+    border-left: 5px solid #67d8a1ad;
+}
+
+
+.backlog li{
+    border-left: 5px solid #626262ad;
+}
+
+
+.in_progress li{
+    border-left: 5px solid #7ab0ebad;
+}
+
+.garbage li{
+    border-left: 5px solid #d98080ad;
+}
