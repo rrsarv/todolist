@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Розалина">
+    <title>Сарварова Розалина Фанисовна</title>
+ </head>
+ <body>
+    <section class="header">
+            <a>Список задач</a>
+    </section>
+    <section class="new_task">
+        <label>Новая задача</label>
+        <form>
+           <input name="text" placeholder="Название задачи...">
+            <button type="button">+ Добавить</button>
+        </form>
+    </section>
+    <section class="row">
+        <div class="backlog">
+            <ul class="list_backlog">
+                <label>Бэклог</label>
+                <li class="task">Выучить JS</li>
+                <li class="task">Выучить React</li>
+                <li class="task">Сделать домашку</li>
+            </ul>
+        </div>
+    
+        <div class="in_progress">
+            <ul class="list_in_progress">
+                <label>В процессе</label>
+                <li class="task">Выпить смузи</li>
+                <li class="task">Попить воды</li>
+            </ul>
+        </div>
+    
+        <div class="done"> 
+            <ul class="list_done">
+                <label>Готово</label>
+                <li class="task">Позвонить маме</li>
+                <li class="task">Погладить кота</li>
+            </ul>
+        </div>
+    
+        <div class="garbage">
+            <ul class="list_garbage">            
+                <label>Корзина</label>
+                <li class="task">Сходить погулять</li>
+                <li class="task">Прочитать Войну и Мир</li>
+                <button type="button">X Очистить</button>
+            </ul>
+        </div>
+    </section>
+ </body>
+
+</html>
