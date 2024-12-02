@@ -17,13 +17,29 @@ function createTasksListComponentTemplate(status) {
 
 export default class tasksListComponent extends AbstractComponent {
   status;
-  constructor({ status }) {
+
+  constructor({ status,onTaskDrop }) {
     super();
     this.status = status;
+    this.#setDropHandler(onTaskDrop);
   }
 
   get template() {  
       return createTasksListComponentTemplate(this.status);
   }
 
+
+
+#setDropHandler(onTaskDrop) {
+  const container = this.element;
+  container.addEventListener('dragover',(event)=>{
+    event.preventDefault();
+  });
+  
+  container.addEventListener('drop',(event)=>{
+    event.preventDefault();
+    const taskId = event.dataTransfer.getData('text/plain');
+    onTaskDrop(taskId,this.status);
+  })
+ }
 }
