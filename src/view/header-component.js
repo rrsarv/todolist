@@ -5,7 +5,7 @@ function createHeaderComponentTemplate() {
     return (
       
       `
-            <h>Список задач</h>
+            <h1> Список задач</h1>
     `
 
       );
