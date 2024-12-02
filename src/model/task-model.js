@@ -27,6 +27,18 @@ export default class TasksModel {
   this.#boardtasks = this.#boardtasks.filter(task => task.status !== status);
 }
 
+
+updateTaskStatus(taskId, newStatus) {
+  const task = this.#boardtasks.find(task => task.id === taskId);
+  console.log(task)
+  
+  if (task) {
+    task.status = newStatus;
+    this._notifyObservers();
+  }
+}
+
+
  addObserver(observer){
   this.#observers.push(observer);
  }
