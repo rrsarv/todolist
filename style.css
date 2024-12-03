@@ -2,7 +2,7 @@ body{
     background-color:rgb(222, 227, 242);
 }
 
-.header{
+ h1{
     background-color: rgb(61, 110, 234);
     display: block;
     height: 50px;
@@ -20,63 +20,15 @@ padding-left: 60px;
 
 
 
-.row {
+.tasks_blok{
     display: flex;
     align-items:baseline;
     justify-content: space-between;
     margin: 0 20px 0 0;
+
 }
 
-.backlog label {
-    display: flex;
-    align-items:baseline;
-    border: 1px solid #ccc; /* Добавляет границу для наглядности */
-    border-radius: 7px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color:#626262ad;
-    width: 150px; 
-}
-
-
-
-.in_progress label {
-    display: flex;
-    align-items:baseline;
-    border: 1px solid #ccc; /* Добавляет границу для наглядности */
-    border-radius: 7px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color:#7ab0ebad;
-    width: 150px;
-}
-
-.done label {
-    display: flex;
-    align-items:baseline;
-    border: 1px solid #ccc; /* Добавляет границу для наглядности */
-    border-radius: 7px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color:#67d8a1ad;
-    width: 150px;
-}
-
-
-.garbage label {
-    display: flex;
-    align-items:baseline;
-    border: 1px solid #ccc; /* Добавляет границу для наглядности */
-    border-radius: 7px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color:#d98080ad;
-    width: 150px;
-}
-
-
-
-.task { 
+.task--backlog{
     border: 1px solid #ccc; /* Добавляет границу для наглядности */
     border-radius: 7px;
     padding: 15px;
@@ -93,6 +45,147 @@ padding-left: 60px;
     font-weight: 500;
     width: 238px;
 }
+
+
+.task--in_progress{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 13px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: aliceblue;
+    list-style-type: none;
+    text-align: left;
+    font-family: montserrat;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    width: 238px;
+}
+
+
+.task--done{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 13px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: aliceblue;
+    list-style-type: none;
+    text-align: left;
+    font-family: montserrat;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    width: 238px;
+}
+
+.task--garbage{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 13px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: aliceblue;
+    list-style-type: none;
+    text-align: left;
+    font-family: montserrat;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    width: 238px;
+}
+
+
+.task-submit{
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 13px;
+    margin: 10px 0;
+    margin-right: 30px;
+    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
+    background-color: aliceblue;
+    list-style-type: none;
+    text-align: left;
+    font-family: montserrat;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    width: 238px;
+}
+
+.list_garbage button{
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#d98080ad;
+    width: 150px;
+}
+
+.list_backlog label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#626262ad;
+    width: 150px; 
+    font-family: montserrat;
+}
+
+
+
+.list_in_progress label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#7ab0ebad;
+    width: 150px;
+    font-family: montserrat;
+}
+
+.list_done label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color:#67d8a1ad;
+    width: 150px;
+    font-family: montserrat;
+}
+
+
+.list_garbage label {
+    display: flex;
+    align-items:baseline;
+    border: 1px solid #ccc; /* Добавляет границу для наглядности */
+    border-radius: 7px;
+    padding: 15px;
+    margin: 10px 0;
+   
+    background-color:#d98080ad;
+    width: 150px;
+    font-family: montserrat;
+}
+
+
+
 
 
 
@@ -132,62 +225,12 @@ padding-left: 60px;
     border-radius: 7px;
     padding-left: 15px;
     font-family: montserrat;
-    color: rgb(244, 244, 244);
+    color: rgb(22, 22, 22);
 }
 
 .new_task label{
 font-weight: 800;
 font-size: 20px;
-}
-
-.garbage button{
-    border: 1px solid #ccc; /* Добавляет границу для наглядности */
-    border-radius: 7px;
-    padding: 15px;
-    margin: 10px 0;
-    margin-right: 30px;
-    box-shadow: 0 1px 3px rgba(1,0,0,0.1);
-    background-color: #d98080ad;
-    text-align: center;
-    font-family: montserrat;
-    color: #871212ad;
-    font-weight: bold;
-    width: 271px;
-}
-
-
-
-
-
-
-
-.backlog{
-    font-family: montserrat;
-    color: #202020ad;
-    font-weight: bold;
-    width: 22%;
-    
-}
-
-.in_progress{
-    font-family: montserrat;
-    color: #145dabad;
-    font-weight: bold;
-    width: 22%;
-}
-
-.done{
-    font-family: montserrat;
-color:#1b754aad ;
-font-weight: bold;
-width: 22%;
-}
-
-.garbage{
-    font-family: montserrat;
-    color: #871212ad;
-    font-weight: bold;
-    width: 22%;
 }
 
 
@@ -212,3 +255,18 @@ width: 22%;
 .garbage li{
     border-left: 5px solid #d98080ad;
 }
+
+
+
+.loading{
+    position: fixed;
+    z-index: 9999;
+    left: 700px;
+    bottom: 410px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family:montserrat ;
+     
+    }
+
+    
