@@ -268,3 +268,9 @@ font-size: 20px;
     font-family:montserrat ;
      
     }
+
+    .tasks button:disabled, .btn:hover:disabled { 
+        background-color: #00000039; 
+        border: 1px solid rgba(0, 0, 0, .1); 
+        cursor: not-allowed; 
+      }
