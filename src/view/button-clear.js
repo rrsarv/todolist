@@ -2,7 +2,7 @@ import { AbstractComponent } from "../framework/view/abstract-component.js";
 
 function createClearButtonComponentTemplate() {
   return `
-                <button type="button">x Очистить</button>
+                <button type="button" id="clear">x Очистить</button>
         `;
 }
 
