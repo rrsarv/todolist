@@ -1,20 +1,25 @@
-export default class Observable {
+import { createElement } from "../render.js";
 
+export class AbstractComponent {
+   #element = null;
+   constructor() {
+       if (new.target === AbstractComponent) {
+         throw new Error("Can\'t instantiate AbstractComponent, only concrete one.");
+       }
+     }
 
-  #observers = new Set();
+     get element() {
+       if (!this.#element) {
+         this.#element = createElement(this.template);
+       }
+  
+       return this.#element;
+     }
+     get template() {
+       throw new Error("Abstract method not implemented: get template");
+     }
 
-
-  addObserver(observer) {
-    this.#observers.add(observer);
-  }
-
-
-  removeObserver(observer) {
-    this.#observers.delete(observer);
-  }
-
-
-  _notify(event, payload) {
-    this.#observers.forEach((observer) => observer(event, payload));
-  }
+     removeElement() {
+       this.#element = null;
+     }
 }
