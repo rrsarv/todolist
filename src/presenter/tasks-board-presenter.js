@@ -73,7 +73,7 @@ export default class TasksBoardPresenter {
       if (tasksForStatus.length===0){
         render(new SubmitTaskComponent(), tasksListComponent.element);
         this.makeClearButton();
-        const ClearButton = document.querySelector('#delite-btn');
+        const ClearButton = document.querySelector('#clear');
         ClearButton.setAttribute('disabled','true')
         }
       else{
@@ -85,7 +85,6 @@ export default class TasksBoardPresenter {
 
         }
     }
-
 
 
     async createTask() {
